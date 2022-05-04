@@ -2,7 +2,7 @@ import json
 
 
 def read_user():
-    with open('data/users.json') as stream:
+    with open('data/users.json', encoding='utf-8') as stream:
         users = json.load(stream)
 
     return users
