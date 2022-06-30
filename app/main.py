@@ -11,6 +11,10 @@ app = FastAPI()
 def root():
     return {"message": "Fast API in Python"}
 
+@app.get("/hello")
+def root():
+    return {"message": "Fast API in Python, hello route"}
+
 
 @app.get("/user")
 def read_user():
