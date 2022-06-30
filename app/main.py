@@ -12,7 +12,7 @@ def root():
     return {"message": "Fast API in Python"}
 
 @app.get("/hello")
-def root():
+def hello():
     return {"message": "Fast API in Python, hello route"}
 
 
